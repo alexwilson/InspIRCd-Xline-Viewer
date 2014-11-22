@@ -1,0 +1,8 @@
+VERSION 1
+LINE E *@127.0.0.1 test.example.com 1397196262 0 :<Config>
+LINE G *@0.0.0.0 test.example.com 1400474923 1311111819 :Test Gline
+LINE G *@cs-tor.bu.edu test.example.com 1415687580 0 :This TOR node is blocked for abuse
+LINE Q *Serv test.example.com 1389701178 0 :Reserved For Services
+LINE Q IRC test.example.com 1356086382 0 :Reserved
+LINE SHUN *!*mirror@* test.example.com 1356872360 0 :Probably Janus ClientBot (If you're a Janus ClientBot, please approach a Network Operator regarding a Janus InterLink, or if not please change your ident)
+LINE Z 0.0.0.0 test.example.com 1375300665 1413661819 :Test Zline

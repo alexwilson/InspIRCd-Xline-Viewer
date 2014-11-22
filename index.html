@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>InspIRCd Xlines Viewer</title>
+
+		<!-- Stylesheets. -->
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading">InspIRCd Xlines Viewer</div>
+				<div class="panel-body">
+					<!-- Table Struct -->
+					<table id="lines" class="table table-striped" cellspacing="0" width="100%">
+						<thead>
+							<tr>
+								<th data-filter>Type</th>
+								<th>Host</th>
+								<th>Start</th>
+								<th>End</th>
+								<th>Reason</th>
+							</tr>
+						</thead>
+					</table>		
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts loaded last for responsiveness. -->
+		<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+		<script type="text/javascript" language="javascript" src="xlines.js"></script>
+	</body>
+</html>
