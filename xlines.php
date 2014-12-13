@@ -13,7 +13,7 @@
 	(string)$pattern	= (string)"/(*UTF8)LINE\s(\S+)?\s(\S+?)\s(\S+)?\s(\S+)?\s(\S+)\s\:(.*)?/";
 
 	// Arrays to hold our data.
-	(array)$data		= array();
+	(array)$data		= (array)array();
 	(array)$lines		= (array)array();
 
 	// Strings from the configuration file.
@@ -50,7 +50,7 @@
 	}
 
 	// Loop over each line of our file.
-	foreach (file($filename) as $line) {
+	foreach ($data as $line) {
 
 		// If our (non-greedy) pattern matches, we build our array from it.
 		if (preg_match($pattern, $line, $matches)) {
