@@ -26,9 +26,9 @@
 	}
 
 	// Whether or not we are currently inside a CLI.
-	(bool)$is_cli		= (php_sapi_name() == 'cli' OR defined('STDIN'));
+	(bool)$isCli		= (php_sapi_name() == 'cli' OR defined('STDIN'));
 
-	if ($is_cli) {
+	if ($isCli) {
 		// If stdin read is blocking, user will not be able to proceed.
 		stream_set_blocking(STDIN, FALSE);
 
